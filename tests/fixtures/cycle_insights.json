@@ -1,0 +1,45 @@
+{
+  "metadata": { "ai_context_metadata": { "is_wce_enabled": true } },
+  "navigation_title": "Menstrual Cycle Insights",
+  "tiles": [
+    {
+      "type": "HEADER_TILE",
+      "content": {
+        "title_display": "Cycle Day 11",
+        "subtitle_display": "Luteal Phase",
+        "description_display": "Possible Period Start",
+        "style": "LUTEAL"
+      }
+    },
+    {
+      "type": "CALENDAR_TILE",
+      "content": {
+        "date_picker": { "current_date_range_display": "May", "next_date_time": "2026-06-01", "previous_date_time": "2026-04-01" },
+        "calendar": {
+          "days_of_month": [
+            { "date_value_display": "10", "date": "2026-05-10", "phase": "NONE", "day_state": "WHITE_NO_BACKGROUND", "first_day_of_phase": false },
+            { "date_value_display": "18", "date": "2026-05-18", "phase": "OVULATORY", "day_state": "WHITE_NO_BACKGROUND", "first_day_of_phase": true },
+            { "date_value_display": "19", "date": "2026-05-19", "phase": "OVULATORY", "day_state": "WHITE_NO_BACKGROUND", "first_day_of_phase": false },
+            { "date_value_display": "21", "date": "2026-05-21", "phase": "MENSTRUAL", "day_state": "PERIOD", "first_day_of_phase": true },
+            { "date_value_display": "22", "date": "2026-05-22", "phase": "MENSTRUAL", "day_state": "PERIOD", "first_day_of_phase": false }
+          ]
+        }
+      }
+    },
+    {
+      "type": "TYPICAL_CYCLE_TILE",
+      "content": {
+        "tile_title_display": "YOUR TYPICAL CYCLE",
+        "stats": [
+          { "title_display": "PERIOD LENGTH", "value_display": "5", "units": "Days" },
+          { "title_display": "CYCLE LENGTH", "value_display": "28", "units": "Days" },
+          { "title_display": "CYCLE VARIATION", "value_display": "2", "units": "Days" }
+        ]
+      }
+    },
+    {
+      "type": "CYCLE_PHASE_COACHING",
+      "content": { "title_display": "LUTEAL PHASE GUIDANCE", "destination": { "parameters": { "phase": "LUTEAL" } } }
+    }
+  ]
+}

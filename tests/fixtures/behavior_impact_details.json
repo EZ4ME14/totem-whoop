@@ -1,0 +1,76 @@
+{
+ "header": {
+  "details_title_display": "Daylight Eating",
+  "details_subtitle_display": "",
+  "details_tag_label_display": "",
+  "details_impact_style": "INSUFFICIENT",
+  "details_impact_value_display": "",
+  "details_image_display": "https://dq69bav6w4xcs.cloudfront.net/treatments/journal/daylight_eating.png"
+ },
+ "sections": [
+  {
+   "items": [
+    {
+     "type": "BEHAVIOR_DETAILS_TILE",
+     "content": {
+      "impact_card": {
+       "title_display": "RECOVERY IMPACT",
+       "impact_style": "POSITIVE",
+       "tile_tag": {
+        "tag_title_display": "Positive",
+        "tag_style": "POSITIVE"
+       },
+       "impact_percentage_value": "+7",
+       "impact_percentage_symbol": "%",
+       "sub_bar_label": "WHOOP MEMBER AVERAGE:",
+       "sub_bar_percent": "+3%",
+       "impact_bar_segment": {
+        "horizontal_position": 0.89,
+        "marker_text_display": null,
+        "segment_marker": {
+         "marker_position": 0.67,
+         "marker_label_display": null,
+         "marker_sublabel_display": null
+        },
+        "impact_style": "POSITIVE"
+       }
+      },
+      "impact_additional_details": []
+     }
+    }
+   ],
+   "id": "behavior_details_tile",
+   "section_type": "COMPACT"
+  },
+  {
+   "items": [
+    {
+     "type": "ARCH_MINI_BEHAVIOR_DETAILS",
+     "content": {
+      "path": "behavior-impact-service/v1/impact/journal-trends/aa0a7709-8ac2-4f92-b17c-e9eb594d2a46"
+     }
+    }
+   ],
+   "id": "arch_mini_behavior_details",
+   "section_type": "COMPACT"
+  }
+ ],
+ "footer": {
+  "impacts_title": "Impact of Daylight Eating",
+  "impacts_description": "Daylight eating, also known as circadian rhythm fasting, is a type of intermittent fasting with eating and fasting times based around the sun. This is different from traditional intermittent fasting which is timed based on personal preference.\n\nDaylight eating has been shown to improve health as research over the past decade has revealed an intimate relationship between metabolic processes and the internal clock. It can help improve body composition, blood sugar regulation, inflammation, and even heart disease.",
+  "tiles": [
+   {
+    "type": "METRIC_EDUCATION",
+    "content": {
+     "style": "RECOMMENDATION",
+     "icon": "ADVICE",
+     "details_education_title_display": "RECOMMENDATION",
+     "details_education_content_display": "Aim to fast for 12-16 hours a day to maximize the benefits to your sleep, cardiovascular health, metabolism, and nervous system. Do your best to eat when it is light out and avoid eating when it is dark.\n\nIf this isn't possible, try to consume the majority of your calories earlier in your day – closer to your habitual wake time – and finish eating at least 2-3 hours before bed. This will ensure the proper release of growth hormones during SWS, a vital step in physical Recovery.",
+     "has_close_button": false
+    }
+   }
+  ]
+ },
+ "analytics_id": "daylight-eating",
+ "metadata": null
+}

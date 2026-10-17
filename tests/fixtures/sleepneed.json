@@ -1,0 +1,107 @@
+{
+ "turn_off_schedule_modal": {
+  "modal_title_display": "TURN OFF SCHEDULE",
+  "modal_subtext_display": "Your schedule is currently on. Turn off your schedule to set a new alarm for tomorrow.",
+  "button_action_display_text": "TURN OFF & SET NEW ALARM",
+  "dismiss_action_display_text": "CANCEL"
+ },
+ "turn_off_all_modal": {
+  "modal_title_display": "TURN OFF ALARM & SCHEDULE",
+  "modal_subtext_display": "All alarms, including recurring ones from your schedule, will be turned off. You can resume them anytime on the Schedule page.",
+  "button_action_display_text": "TURN OFF",
+  "dismiss_action_display_text": "CANCEL"
+ },
+ "chip_label_text_display": "OFF",
+ "alarm_schedule_state": "OFF",
+ "next_schedule_day_label": null,
+ "eligible_for_smart_alarms": true,
+ "need_breakdown": {
+  "total": 34258652,
+  "baseline": 30012238,
+  "naps": 0,
+  "strain": 690356,
+  "debt": 3556058
+ },
+ "need_breakdown_formatted": {
+  "total_need": "9:30",
+  "baseline_need": "8:20",
+  "naps_need": "0:00",
+  "strain_need": "0:11",
+  "debt_need": "0:59"
+ },
+ "recommended_time_in_bed_formatted": {
+  "70": {
+   "recommended_time_in_bed": 25921896,
+   "optimal_endpoints_formatted": {
+    "start": "23:50:00",
+    "end": "08:35:00"
+   },
+   "max_possible_sri": null,
+   "projected_sleep_consistency": null,
+   "sleep_adjustment_time_string": null,
+   "estimated_awake_time_string": "0:34",
+   "recommended_time_in_bed_time_string": "7:13",
+   "sleep_need_time_string": "6:39",
+   "flex_sleep_time": false
+  },
+  "85": {
+   "recommended_time_in_bed": 31476589,
+   "optimal_endpoints_formatted": {
+    "start": "23:50:00",
+    "end": "08:35:00"
+   },
+   "max_possible_sri": null,
+   "projected_sleep_consistency": null,
+   "sleep_adjustment_time_string": null,
+   "estimated_awake_time_string": "0:40",
+   "recommended_time_in_bed_time_string": "8:45",
+   "sleep_need_time_string": "8:05",
+   "flex_sleep_time": false
+  },
+  "100": {
+   "recommended_time_in_bed": 37031281,
+   "optimal_endpoints_formatted": {
+    "start": "23:50:00",
+    "end": "08:35:00"
+   },
+   "max_possible_sri": null,
+   "projected_sleep_consistency": null,
+   "sleep_adjustment_time_string": null,
+   "estimated_awake_time_string": "0:48",
+   "recommended_time_in_bed_time_string": "10:18",
+   "sleep_need_time_string": "9:30",
+   "flex_sleep_time": false
+  },
+  "weekly_plan": {
+   "recommended_time_in_bed": 25800000,
+   "optimal_endpoints_formatted": {
+    "start": "23:50:00",
+    "end": "08:35:00"
+   },
+   "max_possible_sri": null,
+   "projected_sleep_consistency": 79,
+   "sleep_adjustment_time_string": "-2:53",
+   "estimated_awake_time_string": "0:32",
+   "recommended_time_in_bed_time_string": "7:10",
+   "sleep_need_time_string": "6:37",
+   "flex_sleep_time": false
+  },
+  "optimize_sleep": {
+   "recommended_time_in_bed": 25800000,
+   "optimal_endpoints_formatted": {
+    "start": "23:50:00",
+    "end": "08:35:00"
+   },
+   "max_possible_sri": null,
+   "projected_sleep_consistency": 79,
+   "sleep_adjustment_time_string": "-2:53",
+   "estimated_awake_time_string": "0:32",
+   "recommended_time_in_bed_time_string": "7:10",
+   "sleep_need_time_string": "6:37",
+   "flex_sleep_time": false
+  }
+ },
+ "menstrual_coach_enabled": false,
+ "sleep_coach_onboarding_state": null,
+ "menstrual_coaching_details": null
+}

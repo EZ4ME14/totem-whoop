@@ -1,0 +1,66 @@
+{
+  "name": "@thebriangao/totem",
+  "version": "1.5.1",
+  "mcpName": "io.github.thebriangao/totem",
+  "description": "Totem — talk to your wearables with AI over MCP. Today: full Whoop access via its private iOS API (55 tools, read + write, zod-validated outputs, auto-refresh Cognito auth). Fitbit, Apple Watch, and Garmin adapters in progress.",
+  "license": "MIT",
+  "author": "Brian Gao",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebriangao/totem.git"
+  },
+  "homepage": "https://github.com/thebriangao/totem#readme",
+  "keywords": [
+    "mcp",
+    "totem",
+    "wearables",
+    "whoop",
+    "fitbit",
+    "garmin",
+    "apple-watch",
+    "fitness",
+    "health",
+    "claude",
+    "anthropic",
+    "ai",
+    "model-context-protocol",
+    "reverse-engineered"
+  ],
+  "type": "module",
+  "bin": {
+    "totem": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "assets/banner.svg",
+    "README.md",
+    "TOOLS.md",
+    "WHOOP.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE",
+    ".env.example",
+    "Dockerfile",
+    ".dockerignore"
+  ],
+  "scripts": {},
+  "_scripts_note": "All workflows are `totem <command>` (build, dev, dev:http, start, test, typecheck, auth, cloud, local, deploy, logs, ping, …). The only npm steps are `npm install` and, for the one-time build before the CLI is linked, `npx tsc`. See README → Get Started.",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.12.4",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

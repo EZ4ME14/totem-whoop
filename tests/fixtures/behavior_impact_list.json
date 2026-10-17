@@ -1,0 +1,25 @@
+{
+  "header": { "title_display": "Behavior Impacts" },
+  "journal_enabled": true,
+  "tiles": [
+    {
+      "type": "IMPACT_TILE",
+      "content": {
+        "impact_cards": [
+          { "impact_uuid": "aa0a7709-8ac2-4f92-b17c-e9eb594d2a46", "impact_card_title_display": "Daylight Eating", "impact_style": "POSITIVE", "impact_percentage_display": "+7%" },
+          { "impact_uuid": "ed34c5d5-fe91-4068-b7d0-104517ea5809", "impact_card_title_display": "Consistent Wake Time", "impact_style": "POSITIVE", "impact_percentage_display": "+4%" },
+          { "impact_uuid": "67b2a37b-b41c-4ec9-aec3-73a8e741b694", "impact_card_title_display": "Late Caffeine", "impact_style": "NEGATIVE", "impact_percentage_display": "-3%" }
+        ]
+      }
+    },
+    {
+      "type": "INSUFFICIENT_IMPACT_TILE",
+      "content": {
+        "impact_cards": [
+          { "impact_uuid": "f1ce140e-253e-424a-90d5-acc79ce4152f", "impact_card_title_display": "Early Workout", "impact_style": "INSUFFICIENT", "impact_percentage_display": null },
+          { "impact_uuid": "420d6cac-da60-41ec-b924-87857b366c9c", "impact_card_title_display": "Fruits And Vegetables", "impact_style": "INSUFFICIENT", "impact_percentage_display": null }
+        ]
+      }
+    }
+  ]
+}
