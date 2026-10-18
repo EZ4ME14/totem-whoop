@@ -77,6 +77,20 @@ describe("HTTP transport: bearer-auth gate", () => {
     expect(r.status).toBe(404);
   });
 
+  it("returns 404 for an unknown mcp-session-id so the client re-initializes", async () => {
+    const r = await fetch(`${BASE}/mcp`, {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${TOKEN}`,
+        "content-type": "application/json",
+        accept: "application/json, text/event-stream",
+        "mcp-session-id": "00000000-0000-0000-0000-000000000000",
+      },
+      body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/list" }),
+    });
+    expect(r.status).toBe(404);
+  });
+
   it("responds to OPTIONS preflight with CORS headers (204)", async () => {
     const r = await fetch(`${BASE}/mcp`, { method: "OPTIONS" });
     expect(r.status).toBe(204);
