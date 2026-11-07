@@ -1,0 +1,82 @@
+{
+  "id": "react-avoid-dangerously-set-innerHTML",
+  "name": "Avoid dangerouslySetInnerHTML",
+  "technology": "react",
+  "category": "security",
+  "type": "antipattern",
+  "description": "Using dangerouslySetInnerHTML without sanitization can lead to XSS attacks",
+  "implementation": [
+    {
+      "language": "jsx",
+      "code": "<div dangerouslySetInnerHTML={{__html: userInput}} />",
+      "description": "Unsafe HTML injection",
+      "isComplete": true
+    }
+  ],
+  "risks": [
+    {
+      "id": "xss-vulnerability",
+      "level": "high",
+      "category": "security",
+      "description": "Cross-site scripting vulnerability",
+      "impact": "Script injection and data theft",
+      "likelihood": 0.7,
+      "mitigation": [
+        "Sanitize HTML with DOMPurify",
+        "Use textContent instead",
+        "Validate and escape user input"
+      ]
+    }
+  ],
+  "riskScore": 75,
+  "alternatives": [
+    {
+      "id": "dom-purify",
+      "name": "DOMPurify",
+      "technology": "react",
+      "description": "Use DOMPurify to sanitize HTML before rendering",
+      "migrationComplexity": "medium",
+      "migrationSteps": [
+        "Install DOMPurify",
+        "Sanitize HTML content",
+        "Replace dangerouslySetInnerHTML"
+      ],
+      "pros": [
+        "Safe",
+        "Flexible",
+        "Well-maintained"
+      ],
+      "cons": [
+        "Additional dependency",
+        "Performance overhead"
+      ],
+      "whenToUse": "When you need to render HTML content"
+    }
+  ],
+  "confidence": 0.9,
+  "tags": [
+    "security",
+    "react",
+    "xss",
+    "html"
+  ],
+  "createdAt": "2026-11-07T17:12:49.752Z",
+  "updatedAt": "2026-11-07T17:12:49.752Z",
+  "usageCount": 0,
+  "successRate": 0,
+  "applicableContexts": [
+    "react",
+    "frontend",
+    "web-development"
+  ],
+  "incompatibleWith": [],
+  "sources": [
+    {
+      "type": "documentation",
+      "url": "https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml",
+      "title": "React: dangerouslySetInnerHTML",
+      "reliability": 0.95
+    }
+  ],
+  "documentation": []
+}

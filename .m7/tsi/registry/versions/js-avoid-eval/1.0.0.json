@@ -1,0 +1,82 @@
+{
+  "id": "js-avoid-eval",
+  "name": "Avoid eval() function",
+  "technology": "javascript",
+  "category": "security",
+  "type": "antipattern",
+  "description": "Using eval() can lead to code injection vulnerabilities",
+  "implementation": [
+    {
+      "language": "javascript",
+      "code": "eval(userInput); // Dangerous!",
+      "description": "Direct eval usage",
+      "isComplete": true
+    }
+  ],
+  "risks": [
+    {
+      "id": "eval-injection",
+      "level": "critical",
+      "category": "security",
+      "description": "Code injection vulnerability",
+      "impact": "Arbitrary code execution",
+      "likelihood": 0.8,
+      "mitigation": [
+        "Use JSON.parse() for data",
+        "Use Function constructor with validation",
+        "Avoid dynamic code execution"
+      ]
+    }
+  ],
+  "riskScore": 90,
+  "alternatives": [
+    {
+      "id": "json-parse",
+      "name": "JSON.parse()",
+      "technology": "javascript",
+      "description": "Use JSON.parse() for parsing JSON data safely",
+      "migrationComplexity": "low",
+      "migrationSteps": [
+        "Replace eval() with JSON.parse()",
+        "Add error handling",
+        "Validate input format"
+      ],
+      "pros": [
+        "Safe",
+        "Fast",
+        "Standard"
+      ],
+      "cons": [
+        "Only works with JSON"
+      ],
+      "whenToUse": "When parsing JSON data"
+    }
+  ],
+  "confidence": 0.95,
+  "tags": [
+    "security",
+    "javascript",
+    "eval",
+    "injection"
+  ],
+  "createdAt": "2026-11-07T17:12:49.741Z",
+  "updatedAt": "2026-11-07T17:12:49.741Z",
+  "usageCount": 0,
+  "successRate": 0,
+  "applicableContexts": [
+    "web-development",
+    "node.js",
+    "frontend"
+  ],
+  "incompatibleWith": [],
+  "sources": [
+    {
+      "type": "documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval",
+      "title": "MDN: eval()",
+      "reliability": 0.9
+    }
+  ],
+  "documentation": [],
+  "version": "1.0.0"
+}

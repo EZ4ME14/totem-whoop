@@ -71,6 +71,7 @@ import { registerPreferences } from "./v2/preferences.js";
 // Escape
 import { registerRaw } from "./v2/raw.js";
 import { registerEndpoints } from "./v2/endpoints.js";
+import { registerReportClaim } from "./v2/report_claim.js";
 
 export function registerTools(server: McpServer, client: WhoopClient): void {
   // Reads (32)
@@ -131,4 +132,6 @@ export function registerTools(server: McpServer, client: WhoopClient): void {
   // Escape (2)
   registerRaw(server, client);
   registerEndpoints(server, client);
+  // Scheduled-report helper (Upstash only, no Whoop calls)
+  registerReportClaim(server);
 }

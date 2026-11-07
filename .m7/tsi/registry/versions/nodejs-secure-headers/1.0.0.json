@@ -1,0 +1,85 @@
+{
+  "id": "nodejs-secure-headers",
+  "name": "Use Security Headers",
+  "technology": "nodejs",
+  "category": "security",
+  "type": "pattern",
+  "description": "Always set security headers to protect against common attacks",
+  "implementation": [
+    {
+      "language": "javascript",
+      "code": "const helmet = require('helmet');\napp.use(helmet());",
+      "description": "Using helmet middleware for security headers",
+      "isComplete": true,
+      "dependencies": [
+        "helmet"
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": "missing-headers",
+      "level": "medium",
+      "category": "security",
+      "description": "Missing security headers",
+      "impact": "Vulnerability to various attacks",
+      "likelihood": 0.6,
+      "mitigation": [
+        "Use helmet middleware",
+        "Set headers manually",
+        "Configure reverse proxy headers"
+      ]
+    }
+  ],
+  "riskScore": 30,
+  "alternatives": [
+    {
+      "id": "manual-headers",
+      "name": "Manual Headers",
+      "technology": "nodejs",
+      "description": "Set security headers manually",
+      "migrationComplexity": "low",
+      "migrationSteps": [
+        "Remove helmet",
+        "Add manual header middleware",
+        "Test all headers"
+      ],
+      "pros": [
+        "Full control",
+        "No dependencies"
+      ],
+      "cons": [
+        "More code",
+        "Easy to miss headers"
+      ],
+      "whenToUse": "When you need fine-grained control"
+    }
+  ],
+  "confidence": 0.85,
+  "tags": [
+    "security",
+    "nodejs",
+    "headers",
+    "helmet"
+  ],
+  "createdAt": "2026-11-07T17:12:49.755Z",
+  "updatedAt": "2026-11-07T17:12:49.755Z",
+  "usageCount": 0,
+  "successRate": 0,
+  "applicableContexts": [
+    "nodejs",
+    "express",
+    "web-server"
+  ],
+  "incompatibleWith": [],
+  "sources": [
+    {
+      "type": "github",
+      "url": "https://github.com/helmetjs/helmet",
+      "title": "Helmet.js",
+      "reliability": 0.9
+    }
+  ],
+  "documentation": [],
+  "version": "1.0.0"
+}
