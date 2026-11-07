@@ -7,6 +7,7 @@
 # ─── personal health data (local reports) ──────────────────────────────────
 reports/
 whoop-report.json
+.m7/
 
 # ─── build output ──────────────────────────────────────────────────────────
 dist/
